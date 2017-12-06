@@ -5,33 +5,67 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+
     <script src="/script.js" defer></script>
   </head>
   <body>
+    
+    <div class="c-screen is-visible" id="start">
+      <h1 class="u-center u-h1">
+        Willkommen
+      </h1>
+      <div class="u-center">
+        <button class="c-button js-screen" target="polaroids">
+          Polaroids
+        </button>  
+      </div>
+      
+    </div>
   
     
-    <div class="c-videocard" title="Valerie & Andreas">
-      <div class="c-videocard__videocontainer" >
-        <div class="c-videocard__video">
-          <video src="https://cdn.glitch.com/219b277d-fe56-4591-a008-b3ef549b97f4%2Fvalerie-andreas.mp4?1512246053718"></video>
+    
+    
+    
+    
+    <div class="c-screen" id="polaroids">
+    
+      <div class="c-videocard" title="Valerie & Andreas">
+        <div class="c-videocard__videocontainer" >
+          <div class="c-videocard__video">
+            <video src="https://cdn.glitch.com/219b277d-fe56-4591-a008-b3ef549b97f4%2Fvalerie-andreas.mp4"></video>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <div class="c-videocard" title="Mewes & Laura">
-      <div class="c-videocard__video">
-        <video src="https://cdn.glitch.com/219b277d-fe56-4591-a008-b3ef549b97f4%2Fmewes-laura.mp4?1512249932068"></video>
+
+      <div class="c-videocard" title="Mewes & Laura">
+        <div class="c-videocard__videocontainer" >
+          <div class="c-videocard__video">
+            <video src="https://cdn.glitch.com/219b277d-fe56-4591-a008-b3ef549b97f4%2Fmewes-laura.mp4"></video>
+          </div>
+        </div>
       </div>
-    </div>
-    
-    <div class="c-videocard" title="Valerie & Andreas">
-      <div class="c-videocard__video">
-        <video src="https://cdn.glitch.com/219b277d-fe56-4591-a008-b3ef549b97f4%2Fvalerie-andreas.mp4?1512246053718"></video>
+
+      <div class="c-videocard" title="Angelika">
+        <div class="c-videocard__videocontainer" >
+          <div class="c-videocard__video c-videocard__video--80">
+            <video src="https://cdn.glitch.com/219b277d-fe56-4591-a008-b3ef549b97f4%2Fangelika.mp4"></video>
+          </div>  
+        </div>
       </div>
+
+      <div class="c-videocard" title="England">
+        <div class="c-videocard__videocontainer" >
+          <div class="c-videocard__video c-videocard__video--horz">
+            <video src="https://cdn.glitch.com/219b277d-fe56-4591-a008-b3ef549b97f4%2Fengland.mp4"></video>
+          </div>  
+        </div>
+      </div>  
+
     </div>
-    
-    
+  
     
   </body>
 </html>

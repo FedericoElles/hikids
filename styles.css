@@ -1,18 +1,26 @@
 body{
   background: url(https://zurb.com/playground/uploads/upload/upload/87/wood-bg.jpg);
+  font-family: 'Just Another Hand', cursive;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
 
 .c-videocard {
   cursor: pointer;
   background-color: white;
-  margin: 20px 40px;
+  margin: 20px 20px;
   display: inline-block;
   width:300px;
   transform: rotate(-2deg);
   transition: all .15s linear;
   box-shadow: 0 3px 6px rgba(0,0,0,.25);
   border:10px solid white;
-  border-bottom-width:40px;
+  border-bottom-width:10px;
+}
+
+.c-videocard.is-active{
+  z-index:10;
 }
 
 .c-videocard__videocontainer{
@@ -68,13 +76,15 @@ body{
 .c-videocard:after {
   content: attr(title);
   color: #222;
-  font-size:30px;
+  font-size:42px;
   z-index:1;
   text-align:center;
   width:100%;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
-
+  display: block;
+  padding-top: 17px;
+  letter-spacing:1px;
 }
 
 .c-videocard.is-active:before{
@@ -88,7 +98,51 @@ body{
   transform: translate(0, -50%);
 }
 
+.c-videocard__video--80{
+    top: 80%;        
+}
+
+
+.c-videocard__video--horz{
+    width: 158%;
+    left: -26%;
+}
+  
+
 .c-videocard__video video{
   width:100%;
 }
 
+
+/* Screen */
+
+.c-screen {
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+
+
+.c-screen.is-visible{
+  display: block;
+}
+
+/* Buttons */
+
+.c-button {
+  padding: 20px;
+  font-size:200%;
+  border: 2px solid white;
+  background: trasparent;
+}
+
+
+/* Helpers */
+
+.u-center {
+  text-align:center;
+}
+
+.u-h1 {
+  font-size: 300%;
+}
