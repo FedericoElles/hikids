@@ -10,4 +10,7 @@ var videos = [{
     },{
       title: "England",
       video: "https://cdn.glitch.com/219b277d-fe56-4591-a008-b3ef549b97f4%2Fengland.mp4"
+    },{
+      title: "Erkelenz",
+      video: "https://cdn.glitch.com/219b277d-fe56-4591-a008-b3ef549b97f4%2Fmocha.mp4"
     }];
