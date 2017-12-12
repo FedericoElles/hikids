@@ -107,7 +107,11 @@ body{
     width: 158%;
     left: -26%;
 }
-  
+ 
+.c-videocard__video--horz120{
+    width: 120%;
+    left: -10%;
+}
 
 .c-videocard__video video{
   width:100%;
